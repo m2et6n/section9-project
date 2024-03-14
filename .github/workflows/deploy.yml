@@ -70,3 +70,6 @@ jobs:
         with:
           bucket: maxgh-section9-bucket
           dist-folder: ./dist
+      - name: Output Info
+        run: |
+          echo "Live URL: ${{ steps.deploy.outputs.website-url }}
